@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Delights | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Savory Delights</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Culinary Excellence</h1>
+            <p>Indulge in a symphony of flavors crafted with passion and precision</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn primary">View Menu</a>
+                <a href="#reservation" class="btn secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&w=600&q=80" alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h3>A Culinary Journey</h3>
+                    <p>Founded in 2010, Savory Delights has been serving exquisite cuisine to our valued guests for over a decade. Our journey began with a simple passion for creating memorable dining experiences.</p>
+                    <p>Our executive chef, with over 20 years of culinary expertise, leads a team of talented professionals dedicated to crafting dishes that delight the senses and nourish the soul.</p>
+                    <p>We source only the freshest, highest-quality ingredients from local farmers and suppliers, ensuring that every dish tells a story of authenticity and excellence.</p>
+                    <div class="signature">
+                        <img src="https://www.seekpng.com/png/detail/115-1150053_signature-png-transparent-fake-signature-png.png" alt="Chef's Signature" style="max-width: 120px;">
+                        <p>Chef Michael Anderson</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-menu="starters">Starters</button>
+                <button class="menu-tab" data-menu="main-courses">Main Courses</button>
+                <button class="menu-tab" data-menu="desserts">Desserts</button>
+                <button class="menu-tab" data-menu="drinks">Drinks</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="starters">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Bruschetta</h3>
+                            <p>Toasted bread topped with fresh tomatoes, basil, and garlic</p>
+                        </div>
+                        <div class="menu-item-price">$8.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Calamari Fritti</h3>
+                            <p>Crispy fried calamari served with lemon aioli</p>
+                        </div>
+                        <div class="menu-item-price">$12.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Caprese Salad</h3>
+                            <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                        </div>
+                        <div class="menu-item-price">$10.95</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="main-courses">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Filet Mignon</h3>
+                            <p>8oz premium cut served with truffle mashed potatoes and seasonal vegetables</p>
+                        </div>
+                        <div class="menu-item-price">$34.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Lobster Ravioli</h3>
+                            <p>Homemade ravioli stuffed with lobster in a creamy saffron sauce</p>
+                        </div>
+                        <div class="menu-item-price">$28.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Herb-Crusted Salmon</h3>
+                            <p>Fresh Atlantic salmon with a herb crust, served with quinoa and roasted vegetables</p>
+                        </div>
+                        <div class="menu-item-price">$26.95</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Tiramisu</h3>
+                            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                        </div>
+                        <div class="menu-item-price">$8.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item-price">$9.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Crème Brûlée</h3>
+                            <p>Rich custard base topped with a layer of hardened caramelized sugar</p>
+                        </div>
+                        <div class="menu-item-price">$8.95</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Signature Martini</h3>
+                            <p>Our house specialty with premium vodka and a secret blend of flavors</p>
+                        </div>
+                        <div class="menu-item-price">$12.95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Aged Wine Selection</h3>
+                            <p>Ask your server about our curated wine list</p>
+                        </div>
+                        <div class="menu-item-price">Varies</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Craft Mocktails</h3>
+                            <p>Refreshing non-alcoholic beverages crafted with fresh ingredients</p>
+                        </div>
+                        <div class="menu-item-price">$7.95</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Food Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80" alt="Food Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book a Table</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>Reservation Details</h3>
+                    <p>We're excited to host you at Savory Delights. Please fill out the form to reserve your table.</p>
+                    <p>For special requests or parties larger than 8, please call us directly at <strong>(555) 123-4567</strong>.</p>
+                    <div class="hours">
+                        <h4>Opening Hours</h4>
+                        <ul>
+                            <li><span>Monday - Thursday:</span> 11:00 AM - 10:00 PM</li>
+                            <li><span>Friday - Saturday:</span> 11:00 AM - 11:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Special Requests (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>123 Gourmet Avenue, Culinary District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@savorydelights.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425882426698!3d40.74076987932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzI2LjgiTiA3NMKwMDAnMDkuMCJX!5e0!3m2!1sen!2sus!4v1620160657454!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Savory Delights</h2>
+                    <p>Culinary excellence since 2010</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Savory Delights. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
