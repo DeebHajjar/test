@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Arabic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,12 +18,18 @@
             </div>
             <nav>
                 <ul class="menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+                    <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                    <li><a href="#reservation" data-i18n="nav_reservation">Reservation</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li class="language-selector">
+                        <select id="language-switcher">
+                            <option value="en">English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -34,11 +42,11 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Experience Culinary Excellence</h1>
-            <p>Indulge in a symphony of flavors crafted with passion and precision</p>
+            <h1 data-i18n="hero_title">Experience Culinary Excellence</h1>
+            <p data-i18n="hero_subtitle">Indulge in a symphony of flavors crafted with passion and precision</p>
             <div class="cta-buttons">
-                <a href="#menu" class="btn primary">View Menu</a>
-                <a href="#reservation" class="btn secondary">Book a Table</a>
+                <a href="#menu" class="btn primary" data-i18n="hero_btn_menu">View Menu</a>
+                <a href="#reservation" class="btn secondary" data-i18n="hero_btn_book">Book a Table</a>
             </div>
         </div>
     </section>
@@ -46,7 +54,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Our Story</h2>
+                <h2 data-i18n="about_title">Our Story</h2>
                 <div class="divider"></div>
             </div>
             <div class="about-content">
@@ -54,13 +62,13 @@
                     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&w=600&q=80" alt="Restaurant Interior">
                 </div>
                 <div class="about-text">
-                    <h3>A Culinary Journey</h3>
-                    <p>Founded in 2010, Savory Delights has been serving exquisite cuisine to our valued guests for over a decade. Our journey began with a simple passion for creating memorable dining experiences.</p>
-                    <p>Our executive chef, with over 20 years of culinary expertise, leads a team of talented professionals dedicated to crafting dishes that delight the senses and nourish the soul.</p>
-                    <p>We source only the freshest, highest-quality ingredients from local farmers and suppliers, ensuring that every dish tells a story of authenticity and excellence.</p>
+                    <h3 data-i18n="about_subtitle">A Culinary Journey</h3>
+                    <p data-i18n="about_p1">Founded in 2010, Savory Delights has been serving exquisite cuisine to our valued guests for over a decade. Our journey began with a simple passion for creating memorable dining experiences.</p>
+                    <p data-i18n="about_p2">Our executive chef, with over 20 years of culinary expertise, leads a team of talented professionals dedicated to crafting dishes that delight the senses and nourish the soul.</p>
+                    <p data-i18n="about_p3">We source only the freshest, highest-quality ingredients from local farmers and suppliers, ensuring that every dish tells a story of authenticity and excellence.</p>
                     <div class="signature">
                         <img src="https://www.seekpng.com/png/detail/115-1150053_signature-png-transparent-fake-signature-png.png" alt="Chef's Signature" style="max-width: 120px;">
-                        <p>Chef Michael Anderson</p>
+                        <p data-i18n="about_chef">Chef Michael Anderson</p>
                     </div>
                 </div>
             </div>
@@ -70,35 +78,35 @@
     <section id="menu" class="menu-section">
         <div class="container">
             <div class="section-header">
-                <h2>Our Menu</h2>
+                <h2 data-i18n="menu_title">Our Menu</h2>
                 <div class="divider"></div>
             </div>
             <div class="menu-tabs">
-                <button class="menu-tab active" data-menu="starters">Starters</button>
-                <button class="menu-tab" data-menu="main-courses">Main Courses</button>
-                <button class="menu-tab" data-menu="desserts">Desserts</button>
-                <button class="menu-tab" data-menu="drinks">Drinks</button>
+                <button class="menu-tab active" data-menu="starters" data-i18n="menu_tab1">Starters</button>
+                <button class="menu-tab" data-menu="main-courses" data-i18n="menu_tab2">Main Courses</button>
+                <button class="menu-tab" data-menu="desserts" data-i18n="menu_tab3">Desserts</button>
+                <button class="menu-tab" data-menu="drinks" data-i18n="menu_tab4">Drinks</button>
             </div>
             <div class="menu-content">
                 <div class="menu-category active" id="starters">
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Bruschetta</h3>
-                            <p>Toasted bread topped with fresh tomatoes, basil, and garlic</p>
+                            <h3 data-i18n="starter1_title">Bruschetta</h3>
+                            <p data-i18n="starter1_desc">Toasted bread topped with fresh tomatoes, basil, and garlic</p>
                         </div>
                         <div class="menu-item-price">$8.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Calamari Fritti</h3>
-                            <p>Crispy fried calamari served with lemon aioli</p>
+                            <h3 data-i18n="starter2_title">Calamari Fritti</h3>
+                            <p data-i18n="starter2_desc">Crispy fried calamari served with lemon aioli</p>
                         </div>
                         <div class="menu-item-price">$12.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Caprese Salad</h3>
-                            <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                            <h3 data-i18n="starter3_title">Caprese Salad</h3>
+                            <p data-i18n="starter3_desc">Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
                         </div>
                         <div class="menu-item-price">$10.95</div>
                     </div>
@@ -106,22 +114,22 @@
                 <div class="menu-category" id="main-courses">
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Filet Mignon</h3>
-                            <p>8oz premium cut served with truffle mashed potatoes and seasonal vegetables</p>
+                            <h3 data-i18n="main1_title">Filet Mignon</h3>
+                            <p data-i18n="main1_desc">8oz premium cut served with truffle mashed potatoes and seasonal vegetables</p>
                         </div>
                         <div class="menu-item-price">$34.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Lobster Ravioli</h3>
-                            <p>Homemade ravioli stuffed with lobster in a creamy saffron sauce</p>
+                            <h3 data-i18n="main2_title">Lobster Ravioli</h3>
+                            <p data-i18n="main2_desc">Homemade ravioli stuffed with lobster in a creamy saffron sauce</p>
                         </div>
                         <div class="menu-item-price">$28.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Herb-Crusted Salmon</h3>
-                            <p>Fresh Atlantic salmon with a herb crust, served with quinoa and roasted vegetables</p>
+                            <h3 data-i18n="main3_title">Herb-Crusted Salmon</h3>
+                            <p data-i18n="main3_desc">Fresh Atlantic salmon with a herb crust, served with quinoa and roasted vegetables</p>
                         </div>
                         <div class="menu-item-price">$26.95</div>
                     </div>
@@ -129,22 +137,22 @@
                 <div class="menu-category" id="desserts">
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Tiramisu</h3>
-                            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                            <h3 data-i18n="dessert1_title">Tiramisu</h3>
+                            <p data-i18n="dessert1_desc">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
                         </div>
                         <div class="menu-item-price">$8.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Chocolate Lava Cake</h3>
-                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                            <h3 data-i18n="dessert2_title">Chocolate Lava Cake</h3>
+                            <p data-i18n="dessert2_desc">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
                         </div>
                         <div class="menu-item-price">$9.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Crème Brûlée</h3>
-                            <p>Rich custard base topped with a layer of hardened caramelized sugar</p>
+                            <h3 data-i18n="dessert3_title">Crème Brûlée</h3>
+                            <p data-i18n="dessert3_desc">Rich custard base topped with a layer of hardened caramelized sugar</p>
                         </div>
                         <div class="menu-item-price">$8.95</div>
                     </div>
@@ -152,22 +160,22 @@
                 <div class="menu-category" id="drinks">
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Signature Martini</h3>
-                            <p>Our house specialty with premium vodka and a secret blend of flavors</p>
+                            <h3 data-i18n="drink1_title">Signature Martini</h3>
+                            <p data-i18n="drink1_desc">Our house specialty with premium vodka and a secret blend of flavors</p>
                         </div>
                         <div class="menu-item-price">$12.95</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Aged Wine Selection</h3>
-                            <p>Ask your server about our curated wine list</p>
+                            <h3 data-i18n="drink2_title">Aged Wine Selection</h3>
+                            <p data-i18n="drink2_desc">Ask your server about our curated wine list</p>
                         </div>
                         <div class="menu-item-price">Varies</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <h3>Craft Mocktails</h3>
-                            <p>Refreshing non-alcoholic beverages crafted with fresh ingredients</p>
+                            <h3 data-i18n="drink3_title">Craft Mocktails</h3>
+                            <p data-i18n="drink3_desc">Refreshing non-alcoholic beverages crafted with fresh ingredients</p>
                         </div>
                         <div class="menu-item-price">$7.95</div>
                     </div>
@@ -179,7 +187,7 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Food Gallery</h2>
+                <h2 data-i18n="gallery_title">Food Gallery</h2>
                 <div class="divider"></div>
             </div>
             <div class="gallery-grid">
@@ -208,59 +216,59 @@
     <section id="reservation" class="reservation">
         <div class="container">
             <div class="section-header">
-                <h2>Book a Table</h2>
+                <h2 data-i18n="reservation_title">Book a Table</h2>
                 <div class="divider"></div>
             </div>
             <div class="reservation-content">
                 <div class="reservation-info">
-                    <h3>Reservation Details</h3>
-                    <p>We're excited to host you at Savory Delights. Please fill out the form to reserve your table.</p>
-                    <p>For special requests or parties larger than 8, please call us directly at <strong>(555) 123-4567</strong>.</p>
+                    <h3 data-i18n="reservation_subtitle">Reservation Details</h3>
+                    <p data-i18n="reservation_p1">We're excited to host you at Savory Delights. Please fill out the form to reserve your table.</p>
+                    <p><span data-i18n="reservation_p2">For special requests or parties larger than 8, please call us directly at</span> <strong>(555) 123-4567</strong>.</p>
                     <div class="hours">
-                        <h4>Opening Hours</h4>
+                        <h4 data-i18n="reservation_hours">Opening Hours</h4>
                         <ul>
-                            <li><span>Monday - Thursday:</span> 11:00 AM - 10:00 PM</li>
-                            <li><span>Friday - Saturday:</span> 11:00 AM - 11:00 PM</li>
-                            <li><span>Sunday:</span> 10:00 AM - 9:00 PM</li>
+                            <li><span data-i18n="reservation_mon_thu">Monday - Thursday:</span> <span data-i18n="reservation_time1">11:00 AM - 10:00 PM</span></li>
+                            <li><span data-i18n="reservation_fri_sat">Friday - Saturday:</span> <span data-i18n="reservation_time2">11:00 AM - 11:00 PM</span></li>
+                            <li><span data-i18n="reservation_sun">Sunday:</span> <span data-i18n="reservation_time3">10:00 AM - 9:00 PM</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="reservation-form">
                     <form id="booking-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" data-i18n="form_name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" data-i18n="form_email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" data-i18n="form_phone" required>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="date" id="date" name="date" required>
+                                <input type="date" id="date" name="date" data-i18n="form_date" required>
                             </div>
                             <div class="form-group">
-                                <input type="time" id="time" name="time" required>
+                                <input type="time" id="time" name="time" data-i18n="form_time" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <select id="guests" name="guests" required>
-                                <option value="" disabled selected>Number of Guests</option>
-                                <option value="1">1 Person</option>
-                                <option value="2">2 People</option>
-                                <option value="3">3 People</option>
-                                <option value="4">4 People</option>
-                                <option value="5">5 People</option>
-                                <option value="6">6 People</option>
-                                <option value="7">7 People</option>
-                                <option value="8">8 People</option>
+                                <option value="" disabled selected data-i18n="form_guests_option0">Number of Guests</option>
+                                <option value="1" data-i18n="form_guests_option1">1 Person</option>
+                                <option value="2" data-i18n="form_guests_option2">2 People</option>
+                                <option value="3" data-i18n="form_guests_option3">3 People</option>
+                                <option value="4" data-i18n="form_guests_option4">4 People</option>
+                                <option value="5" data-i18n="form_guests_option5">5 People</option>
+                                <option value="6" data-i18n="form_guests_option6">6 People</option>
+                                <option value="7" data-i18n="form_guests_option7">7 People</option>
+                                <option value="8" data-i18n="form_guests_option8">8 People</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Special Requests (Optional)"></textarea>
+                            <textarea id="message" name="message" placeholder="Special Requests (Optional)" data-i18n="form_requests"></textarea>
                         </div>
-                        <button type="submit" class="btn primary">Book Now</button>
+                        <button type="submit" class="btn primary" data-i18n="form_book_btn">Book Now</button>
                     </form>
                 </div>
             </div>
@@ -270,7 +278,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Contact Us</h2>
+                <h2 data-i18n="contact_title">Contact Us</h2>
                 <div class="divider"></div>
             </div>
             <div class="contact-content">
@@ -278,21 +286,21 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h3>Our Location</h3>
-                            <p>123 Gourmet Avenue, Culinary District<br>New York, NY 10001</p>
+                            <h3 data-i18n="contact_location">Our Location</h3>
+                            <p data-i18n="contact_address">123 Gourmet Avenue, Culinary District<br>New York, NY 10001</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
-                            <h3>Call Us</h3>
+                            <h3 data-i18n="contact_call">Call Us</h3>
                             <p>(555) 123-4567</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h3>Email Us</h3>
+                            <h3 data-i18n="contact_email">Email Us</h3>
                             <p>info@savorydelights.com</p>
                         </div>
                     </div>
@@ -309,21 +317,21 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>Savory Delights</h2>
-                    <p>Culinary excellence since 2010</p>
+                    <p data-i18n="footer_desc">Culinary excellence since 2010</p>
                 </div>
                 <div class="footer-links">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer_links">Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#reservation">Reservation</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+                        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                        <li><a href="#reservation" data-i18n="nav_reservation">Reservation</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h3>Follow Us</h3>
+                    <h3 data-i18n="footer_follow">Follow Us</h3>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -332,20 +340,21 @@
                     </div>
                 </div>
                 <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for special offers and updates</p>
+                    <h3 data-i18n="footer_newsletter">Newsletter</h3>
+                    <p data-i18n="footer_newsletter_desc">Subscribe to our newsletter for special offers and updates</p>
                     <form>
-                        <input type="email" placeholder="Your Email Address">
+                        <input type="email" placeholder="Your Email Address" data-i18n="footer_newsletter_placeholder">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Savory Delights. All Rights Reserved.</p>
+                <p data-i18n="footer_copyright">&copy; 2025 Savory Delights. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

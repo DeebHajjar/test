@@ -1,3 +1,6 @@
+// Current language
+let currentLang = 'en';
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
@@ -7,6 +10,24 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', function() {
             this.classList.toggle('active');
             menu.classList.toggle('active');
+        });
+    }
+    
+    // Language Switcher
+    const langSwitcher = document.getElementById('language-switcher');
+    if (langSwitcher) {
+        langSwitcher.addEventListener('change', function() {
+            currentLang = this.value;
+            updateLanguage();
+            
+            // Update page direction based on language
+            if (currentLang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.body.classList.add('rtl');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.body.classList.remove('rtl');
+            }
         });
     }
 
@@ -155,4 +176,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run animation check on load and scroll
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
+    
+    // Update language function
+    function updateLanguage() {
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[currentLang][key]) {
+                // Check if the element is an input with placeholder
+                if (element.hasAttribute('placeholder')) {
+                    element.setAttribute('placeholder', translations[currentLang][key]);
+                } else {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            }
+        });
+    }
+    
+    // Initialize language
+    updateLanguage();
 });

@@ -12,6 +12,13 @@ body {
     background-color: #fff;
 }
 
+/* RTL Support for Arabic */
+body.rtl {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -643,6 +650,59 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Language Switcher */
+.language-selector {
+    margin-left: 20px;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.rtl .language-selector {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+/* RTL specific styles */
+.rtl .menu li {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.rtl .menu-item {
+    flex-direction: row-reverse;
+}
+
+.rtl .menu-item-price {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.rtl .contact-item i {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.rtl .signature img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.rtl .footer-newsletter button {
+    border-radius: 5px 0 0 5px;
+}
+
+.rtl .footer-newsletter input {
+    border-radius: 0 5px 5px 0;
 }
 
 /* Responsive Styles */
